@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resume.css">
+    <link rel="stylesheet" href="resumefr.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <title>Princesse Rim</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="rimsama.png"></a>
+        <ul class="navigation">
+            <li><a href="rim.html">Accueil</a></li>
+            <li><a href="copines.html">Copines</a></li>
+            <li><a href="lille.html">Lille</a></li>
+            <li><a href="resume.html">Résumé</a></li>
+        </ul>
+        <div class="search">
+            <input type="searchbar" placeholder="Recherche">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </header>
+    <div class="banner">
+        <img src="raiponce.jpg" class="bg">
+        <div class="content">
+            <img src="resume.png" class="movieTitle">
+            <h4>
+                <span>2022</span>
+                <span><i>17+</i></span>
+                <span>1h 55min</span>
+                <span>Biography</span>
+            </h4>
+            <br></br>
+            <ul style="list-style-type: none;"class="rencontre">
+                <li><a href="rencontre.html">Chap. 1 | Rencontre</a></li>
+                <li><a href="suite.html">Chap. 2 | La suite</a></li>
+                <li><a href="querelles.html">Chap. 3 | Querelles</a></li>
+                <li><a href="reconnaissance.html">Chap. 4 | Reconnaissance</a></li>
+                <li><a href="rencontrel.html">Chap. 5 | Rencontre</a></li>
+                <li><a href="querelle2.html">Chap. 6 | Seconde querelle</a></li>
+            </ul>
+        </div>
+        <a class="play" onclick="toggleVideo();"><img src="play.png">Watch Trailer</a>
+    </div>
+
+    <div class="trailer">
+        <video src="rim.mp4" controls="true" autoplay="true"></video>
+        <img src="close.png" class="close" onclick="toggleVideo();" >
+    </div>
+
+    <script>
+        function toggleVideo(){
+            const trailer = document.querySelector('.trailer');
+            const video = document.querySelector('video');
+            trailer.classList.toggle('active')
+            video.currentTime = 0;
+            video.pause();
+        }
+    </script>
+</body>
+</html>

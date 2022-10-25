@@ -1,0 +1,16 @@
+.rencontre li
+{
+    list-style: none;
+    margin: 0 10px;
+}
+.rencontre li a
+{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.rencontre li:hover a
+{
+    color: #de0611;
+}
